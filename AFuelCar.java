@@ -18,9 +18,14 @@ public abstract class AFuelCar extends ACar {
     }
 
 
-    String getFuelType() {
-        return "The fuel type in your car";
+    abstract String getFuelType();
+
+
+    @Override
+    public String toString(){
+        return super.toString() +" Km/l " + " " + this.carKmPrLitre;
     }
+
 }
 
 

@@ -12,6 +12,7 @@ public abstract class ACar implements Car {
         this.numberOfDoors = numberOfDoors;
     }
 
+
     @Override
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -30,6 +31,10 @@ public abstract class ACar implements Car {
     @Override
     public int getNumberOfDoors() {
         return numberOfDoors;
+    }
+    @Override
+    public String toString(){
+        return "Make: " + " " +  this.make + " " + "Model: " + " " +  this.model + " " + "Registration number: " + " " + this.registrationNumber + "Number of doors " + " " + this.numberOfDoors;
     }
 }
 

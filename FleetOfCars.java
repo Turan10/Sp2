@@ -2,27 +2,29 @@ import java.util.ArrayList;
 
 public class FleetOfCars {
 
-    public FleetOfCars(ArrayList<Car> carFleet) {
-        this.carFleet = carFleet;
+    public FleetOfCars() {
+     this.carFleet = new ArrayList<ACar>();
     }
 
-    ArrayList<Car> carFleet = new ArrayList<>();
+    ArrayList<ACar> carFleet;
 
-    public void addCar(Car car){
+    public void addCar(ACar car) {
         carFleet.add(car);
 
     }
 
-    public void getTotalRegistrationFeeForFleet(){
-   int count = 0;
-   for(int i = 0; i < carFleet.size(); i++){
-
-   }
+    public int getTotalRegistrationFeeForFleet() {
+        int totalRegistrationFeeForFleet = 0;
+        for(ACar c : this.carFleet){
+            totalRegistrationFeeForFleet += c.getRegistrationFee();
+        }
+        return totalRegistrationFeeForFleet;
 
     }
 
 
-    public String toString(){
+
+    public String toString() {
         return "The cars in your fleet" + carFleet;
 
     }

@@ -1,59 +1,61 @@
 public class GasolineCar extends AFuelCar implements Car {
 
-    String fueltype;
 
 
-    public GasolineCar(String registrationNumber, String make, String model, String fueltype, int numberOfDoors, int carKmPrLitre) {
+
+    public GasolineCar(String registrationNumber, String make, String model, int numberOfDoors, int carKmPrLitre) {
         super(registrationNumber, make, model, numberOfDoors, carKmPrLitre);
-        this.fueltype = fueltype;
     }
 
     int kmPrLitre() {
         return carKmPrLitre;
     }
-@Override
+
+    @Override
     String getFuelType() {
-        return "Gasoline";}
+        return "Gasoline";
+    }
 
     @Override
     public int getRegistrationFee() {
-       int kmPrLiter = getCarKmPrLitre();
+        int kmPrLiter = getCarKmPrLitre();
 
         int cost = 0;
 
 
-        if (kmPrLiter < 5) {
+        if (kmPrLiter <= 5) {
             cost = 10470;
             System.out.println("The registration fee for your car is " + cost + " kr per half year");
 
         }
-        if (kmPrLiter > 5 && kmPrLiter < 10) {
+        if (kmPrLiter > 5 && kmPrLiter <= 10) {
             cost = 5500;
             System.out.println("The registration fee for your car is " + cost + " kr per half year");
 
         }
-        if (kmPrLiter > 10 && kmPrLiter < 15) {
+        if (kmPrLiter > 10 && kmPrLiter <= 15) {
             cost = 2340;
             System.out.println("The registration fee for your car is " + cost + " kr per half year");
         }
-        if (kmPrLiter > 15 && kmPrLiter < 20) {
+        if (kmPrLiter > 15 && kmPrLiter <= 20) {
             cost = 1050;
             System.out.println("The registration fee for your car is " + cost + " kr per half year");
 
         }
-        if (kmPrLiter > 20 && kmPrLiter < 50) {
+        if (kmPrLiter > 20 && kmPrLiter <= 50) {
             cost = 330;
             System.out.println("The registration fee for your car is " + cost + " kr per half year");
         }
         //Maybe not correct return type!!
 
-return cost;
+        return cost;
 
 
     }
+
     @Override
-    public String toString(){
-        return "Make: " + getMake() + "Model: " +  getModel() + "Registration number: " +  getRegistrationNumber() + "Fueltype: " + getFuelType() + " " + "Number of doors: " +  getNumberOfDoors() + " " + "Km/l: " + getCarKmPrLitre();
+    public String toString() {
+        return super.toString() + " Fueltype" + " " + this.getFuelType();
     }
 }
 
