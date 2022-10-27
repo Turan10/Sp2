@@ -17,7 +17,9 @@ public class FleetOfCars {
         int totalRegistrationFeeForFleet = 0;
         for(ACar c : this.carFleet){
             totalRegistrationFeeForFleet += c.getRegistrationFee();
+
         }
+        System.out.println("The total registration fee for your fleet is kr:");
         return totalRegistrationFeeForFleet;
 
     }

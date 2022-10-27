@@ -38,29 +38,27 @@ public class ElectricCar extends ACar {
 
         if (getWhPrKm() <= 5) {
             cost = 10470;
-            String price = "The registration fee for your car is " + cost + " kr per half year";
-            System.out.println(price);
+            System.out.println("The registration fee for" + " " + this.getMake() + " " + this.getModel() + " is " + cost + " kr per half year");
+
         }
         if (getWhPrKm() > 5 && getWhPrKm() <= 10) {
             cost = 5500;
-            String price = "The registration fee for your car is " + cost + " kr per half year";
-            System.out.println(price);
+            System.out.println("The registration fee for" + " " + this.getMake() + " " + this.getModel() + " is " + cost + " kr per half year");
+
 
         }
         if (getWhPrKm() > 10 && getWhPrKm() <= 15) {
             cost = 2340;
-            String price = "The registration fee for your car is " + cost + " kr per half year";
-            System.out.println(price);
+            System.out.println("The registration fee for" + " " + this.getMake() + " " + this.getModel() + " is " + cost + " kr per half year");
+
         }
         if (getWhPrKm() > 15 && getWhPrKm() <= 20) {
             cost = 1050;
-            String price = "The registration fee for your car is " + cost + " kr per half year";
-            System.out.println(price);
+            System.out.println("The registration fee for" + " " + this.getMake() + " " + this.getModel() + " is " + cost + " kr per half year");
         }
         if (getWhPrKm() > 20 && getWhPrKm() <= 50) {
             cost = 330;
-            String price = "The registration fee for your car is " + cost + " kr per half year";
-            System.out.println(price);
+            System.out.println("The registration fee for" + " " + this.getMake() + " " + this.getModel() + " is " + cost + " kr per half year");
         }
         //Maybe not correct return type!!
         return cost;
