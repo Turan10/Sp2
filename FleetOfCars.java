@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class FleetOfCars {
 
     public FleetOfCars() {
-     this.carFleet = new ArrayList<ACar>();
+        this.carFleet = new ArrayList<ACar>();
     }
 
     ArrayList<ACar> carFleet;
@@ -15,7 +15,7 @@ public class FleetOfCars {
 
     public int getTotalRegistrationFeeForFleet() {
         int totalRegistrationFeeForFleet = 0;
-        for(ACar c : this.carFleet){
+        for (ACar c : this.carFleet) {
             totalRegistrationFeeForFleet += c.getRegistrationFee();
 
         }
@@ -23,7 +23,6 @@ public class FleetOfCars {
         return totalRegistrationFeeForFleet;
 
     }
-
 
 
     public String toString() {

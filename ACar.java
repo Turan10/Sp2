@@ -32,9 +32,10 @@ public abstract class ACar implements Car {
     public int getNumberOfDoors() {
         return numberOfDoors;
     }
+
     @Override
-    public String toString(){
-        return "Make: " + " " +  this.make + " " + "Model: " + " " +  this.model + " " + "Registration number: " + " " + this.registrationNumber + "Number of doors " + " " + this.numberOfDoors;
+    public String toString() {
+        return "Make: " + " " + this.make + " " + "Model: " + " " + this.model + " " + "Registration number: " + " " + this.registrationNumber + "Number of doors " + " " + this.numberOfDoors;
     }
 }
 

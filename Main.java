@@ -7,7 +7,7 @@ public class Main {
 
         GasolineCar gasCar1 = new GasolineCar("KA639896 ", "BMW ", "x5 ", 5, 5);
 
-        ElectricCar elCar1 = new ElectricCar("CS22684", "Hyundai", "Ioniq 5", 5,77,700);
+        ElectricCar elCar1 = new ElectricCar("CS22684", "Hyundai", "Ioniq 5", 5, 77, 700);
 
         disCar1.getRegistrationFee();
         gasCar1.getRegistrationFee();
@@ -17,7 +17,7 @@ public class Main {
         carFleet.addCar(disCar1);
         carFleet.addCar(elCar1);
 
-        for(ACar c : carFleet.carFleet){
+        for (ACar c : carFleet.carFleet) {
             System.out.println(c);
         }
 
